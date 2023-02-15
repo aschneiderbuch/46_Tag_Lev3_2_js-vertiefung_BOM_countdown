@@ -77,7 +77,7 @@ if(counter ==  0 || counter < 0){
 }
 else if(isNaN(counter)){              // stopt wenn counter ist nicht Buchstabe bzw. Stopt wenn counter ist Buchstabe
     clearInterval(stopInterval);
-
+    btnStart.disabled = false;
 }
 else{
     outputField.innerHTML = `${countMin_String00}:${countSek_String00}`;
